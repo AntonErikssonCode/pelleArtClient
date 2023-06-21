@@ -32,7 +32,7 @@ function ArtPage(props) {
       <Header cart={props.cart}/>
       <h2 className="pageTitle">Available Art</h2>
       <div className="artWorks">
-        {art.map((artPiece, index) => {
+        {art.length > 0? art.map((artPiece, index) => {
           
 
           return (
@@ -55,7 +55,7 @@ function ArtPage(props) {
               cart={props.cart}
             />
           );
-        })}
+        }): null}
       </div>
       <ResetButton/>
     </div>

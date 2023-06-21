@@ -37,7 +37,7 @@ function ArtPage(props) {
 
           return (
             <ArtPiece
-              key={index}
+              key={index + "test"}
               index={index}
               data={artPiece}
               expandedIndex={expandedIndex}

@@ -1,0 +1,14 @@
+.artWorks{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+  
+}
+.pageTitle{
+  margin:  2rem;
+  margin-top: 4rem;
+}

@@ -1,0 +1,127 @@
+.checkOut{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scrollbar-gutter: stable;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+.pageTitle{
+  margin:  2rem;
+  margin-top: 4rem;
+
+}
+.divider {
+  border-top: 1px solid #ccc;
+  width: 50%;
+}
+.divider::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ccc;
+}
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, #ccc, transparent);
+}
+
+.payment-container{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-container p{
+width: 10%;
+margin-right: calc(10% + 2rem);
+
+}
+
+.payment-button {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+
+
+  border-radius: 0.2rem;
+  transition: 0.3s;
+  background-color: rgba(90, 236, 45, 0.8);
+}
+.payment-button:hover{
+  scale: 1.03;
+  background-color: rgba(90, 236, 45, 1);
+  
+  }
+
+
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .overlay-content.active {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, rgb(116, 236, 79), rgb(57, 219, 8));
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation: overlayContentAnimation 0.5s ease-in-out 0.0s forwards;
+  }
+  .checkMark.active{
+    width: 100px;
+    height: auto;
+    fill: #fff;
+    opacity: 0;
+    animation: checkmarkAnimation 0.5s ease-in-out 0.5s forwards;
+  }
+
+@keyframes checkmarkAnimation {
+  0%{
+    opacity: 0;
+    transform: translateY(30px)
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px)
+  }
+  
+}
+
+@keyframes overlayContentAnimation {
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+  100%{
+    width: 200px;
+    height: 200px;
+  }
+  
+}

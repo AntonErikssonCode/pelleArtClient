@@ -1,0 +1,299 @@
+.artPiece {
+  width: 25%;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+  user-select: none;
+  cursor: pointer;
+}
+.artPiece-expanded {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.artPiece-background {
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  bottom: 0%;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+}
+.artPice-top {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+.artPice-top-expanded {
+  width: 60%;
+  height: auto;
+  position: fixed;
+  top: 3%;
+}
+
+.img-container {
+  width: 100%;
+  height: auto;
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 10px rgb(58, 58, 58);
+}
+
+.img-container-expanded {
+  width: 100%;
+  box-shadow: none;
+  height: auto;
+  max-height: 75vh;
+  box-shadow: none;
+}
+
+.img-container:hover {
+  scale: 1.03;
+  z-index: 0;
+}
+.img-container-expanded:hover {
+  scale: 1;
+  z-index: 0;
+}
+
+.img-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+p {
+  margin: 0;
+}
+
+.img-image-expanded {
+}
+.artPice-bot {
+  display: flex;
+  justify-content: flex-end;
+  height: 20%;
+  align-items: flex-end;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+.artPice-bot h3,
+.artPice-bot-expanded-top h3 {
+  font-weight: 100;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin: 0;
+}
+.artPice-bot-expanded-top-first {
+  width: 70%;
+}
+
+.artPice-bot-expanded {
+  position: fixed;
+  top: 84%;
+  width: 50%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 12%;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+.artPice-bot-expanded-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.artPice-bot-expanded-bot {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.artPice-bot-expanded-top h4,
+.artPice-bot-expanded-bot p {
+  margin: 0rem;
+}
+.artPice-bot-expanded-bot p {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+/* CSS for previous and next buttons */
+.indexButton {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transition: all 0.3s ease;
+
+  border-radius: 0.2rem;
+}
+
+.prevButton {
+  left: 20px;
+}
+
+.nextButton {
+  right: 20px;
+}
+
+.indexButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  scale: 1.03;
+}
+
+.artPice-bot-expanded-bot-buttons {
+  position: fixed;
+  right: 1%;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 190px;
+  min-width: 190px;
+}
+.CTAbutton1,
+.CTAbutton2,
+.lithography-buttons-left,
+.lithography-buttons-middle,
+.lithography-buttons-right {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px 20px;
+  width: 100%;
+
+  border-radius: 0.2rem;
+  transition: 0.3s;
+}
+.CTAbutton1 {
+  background-color: rgba(90, 236, 45, 0.8);
+}
+.CTAbutton1:hover {
+  scale: 1.03;
+  background-color: rgba(90, 236, 45, 1);
+}
+.CTAbutton2 {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgba(90, 236, 45, 0.8);
+}
+.CTAbutton2:hover,
+.lithography-buttons-left:hover,
+.lithography-buttons-middle:hover,
+.lithography-buttons-right:hover {
+  scale: 1.03;
+  border: 2px solid rgba(90, 236, 45, 1);
+}
+.artPice-bot-expanded-close {
+  position: fixed;
+  left: 1%;
+  top: 10%;
+}
+.artPice-bot-expanded-close button {
+  background-color: rgba(145, 145, 145, 0.482);
+  border-radius: 0.2rem;
+  width: 36px;
+  height: 30px;
+  color: #fff;
+  border: none;
+  border: 2px solid rgb(169, 169, 169);
+  font-size: 16px;
+  transition: all 0.3s;
+}
+.artPice-bot-expanded-close button:hover {
+  scale: 1.03;
+  border: 2px solid rgb(210, 210, 210);
+  background-color: rgba(180, 180, 180, 0.482);
+}
+
+.artPice-sold,
+.artPice-available {
+  margin: 0;
+}
+.artPice-sold {
+  color: #ff4000e0;
+  font-weight: 300;
+}
+.artPice-available {
+  color: rgba(73, 215, 29, 0.8);
+  font-weight: 300;
+}
+
+.lithography-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.lithography-buttons-left {
+  background-color: rgba(255, 255, 255, 0);
+
+  border: 2px solid rgba(90, 236, 45, 1);
+  /*   border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
+  text-align: center;
+  width: 40%;
+}
+.lithography-buttons-middle {
+  background-color: rgba(90, 236, 45, 0.8);
+
+  border: 2px solid rgba(90, 236, 45, 1);
+  /* border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
+  white-space: nowrap;
+
+  width: 100%;
+}
+.lithography-buttons-right {
+  background-color: rgba(255, 255, 255, 0);
+  width: 40%;
+
+
+
+  border: 2px solid rgba(90, 236, 45, 1);
+  /* border-left: none; */
+  /* border-top-left-radius: 0; */
+  /* border-bottom-left-radius: 0; */
+}
+
+.lithography-buttons-amount {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+ 
+}
+.no-border{
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.no-border:hover{
+  scale: 1.0;
+  border: none;
+  
+}

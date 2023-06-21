@@ -1,0 +1,25 @@
+
+@font-face {
+  font-family: 'TypeWriter'; /* Replace 'CustomFont' with your desired font name */
+  src: url("./fonts/Cutive-Regular.ttf") format('truetype'); /* Replace 'your-font-file.ttf' with the actual font file name and adjust the path if needed */
+}
+@font-face {
+  font-family: 'TypeWriter2'; /* Replace 'CustomFont' with your desired font name */
+  src: url("./fonts/SpecialElite-Regular.ttf") format('truetype'); /* Replace 'your-font-file.ttf' with the actual font file name and adjust the path if needed */
+}
+@font-face {
+  font-family: 'Signature'; /* Replace 'CustomFont' with your desired font name */
+  src: url("./fonts/Italianno-Regular.ttf") format('truetype'); /* Replace 'your-font-file.ttf' with the actual font file name and adjust the path if needed */
+}
+body {
+  margin: 0;
+
+    font-family: "TypeWriter";
+    letter-spacing: 2px; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/background4.jpg");
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

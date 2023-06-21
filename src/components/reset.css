@@ -1,0 +1,15 @@
+.resetButton{
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ba2b2b00;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  position: absolute;
+  
+  top: 5%;
+  right: 5%;
+  transition: all 0.3s ease;
+
+  border-radius: 0.2rem;
+}

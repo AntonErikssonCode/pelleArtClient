@@ -26,7 +26,7 @@ function Header(props) {
           <li className="nav-item">
             <Link
               className={`nav-link ${
-                location.pathname == "/" || location.pathname == "/art"
+                location.pathname === "/" || location.pathname === "/art"
                   ? "nav-link-active"
                   : ""
               }`}
@@ -37,7 +37,7 @@ function Header(props) {
           </li>
           <li className="nav-item">
             <Link    className={`nav-link ${
-                location.pathname == "/checkout" 
+                location.pathname === "/checkout" 
                 
                   ? "nav-link-active"
                   : ""

@@ -12,3 +12,18 @@
   margin:  2rem;
   margin-top: 4rem;
 }
+
+@media (max-width: 767px) {
+  /* Styles specific to phones */
+  /* Write your phone-specific styles here */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles specific to tablets */
+  /* Write your tablet-specific styles here */
+}
+
+@media (min-width: 1024px) {
+  /* Styles specific to computers */
+  /* Write your computer-specific styles here */
+}

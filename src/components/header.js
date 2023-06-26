@@ -7,12 +7,9 @@ function Header(props) {
   const [totalCartLength, setTotalCartLength] = useState(0);
 
   useEffect(() => {
-   
-    let cartLength =0;
-    props.cart.forEach(element => {
+    let cartLength = 0;
+    props.cart.forEach((element) => {
       cartLength += element.amount;
-      
-      
     });
 
     setTotalCartLength(cartLength);
@@ -36,15 +33,17 @@ function Header(props) {
             </Link>
           </li>
           <li className="nav-item">
-            <Link    className={`nav-link ${
-                location.pathname === "/checkout" 
-                
-                  ? "nav-link-active"
-                  : ""
-              }`} to="/checkout">
-              CHECK OUT 
+            <Link
+              className={`nav-link ${
+                location.pathname === "/checkout" ? "nav-link-active" : ""
+              }`}
+              to="/checkout"
+            >
+              CHECK OUT
             </Link>
-            <p className="cart-num">{totalCartLength}</p>
+            <div className="cart-num">
+              <p className="">{totalCartLength}</p>
+            </div>
           </li>
         </ul>
       </nav>

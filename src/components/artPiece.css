@@ -243,7 +243,7 @@ p {
 .artPice-sold,
 .artPice-available {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 .artPice-sold {
   color: #ff4000e0;
@@ -384,7 +384,7 @@ top: 16%;
   background-color: rgba(0, 0, 0, 0.5);
   height: auto;
   flex-direction: column;
-  gap: rem;
+  
   color: #fff;
   padding: 0.5rem 1rem;
 }

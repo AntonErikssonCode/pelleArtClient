@@ -14,8 +14,14 @@
 }
 
 @media (max-width: 767px) {
-  /* Styles specific to phones */
-  /* Write your phone-specific styles here */
+  .artWorks {
+    gap: 0rem;
+    margin-top: 0rem;
+    overflow-y: hidden;
+
+
+
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {

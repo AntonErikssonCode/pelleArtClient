@@ -7,6 +7,7 @@
   margin-bottom: 4rem;
   user-select: none;
   cursor: pointer;
+  
 }
 .artPiece-expanded {
   position: fixed;
@@ -20,6 +21,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  
 }
 .artPiece-background {
   background-color: rgba(0, 0, 0, 0.85);
@@ -30,6 +32,7 @@
   right: 0%;
   width: 100%;
   height: 100%;
+  
 }
 .artPice-top {
   display: flex;
@@ -304,65 +307,77 @@ p {
 
 @media (max-width: 767px) {
   .artPiece {
-    width: 80%;
- 
+    width: 90%;
+    position: relative;
+  }
+  .artPiece-background {
+
   }
   .artPice-bot-expanded-close {
     position: fixed;
     left: 1%;
     top: 1%;
   }
-  .img-container-expanded{
-    width: 100%;
+  .artPice-bot-expanded-bot-buttons {
+    position: relative;
+    align-self: center;
+
+ 
+    gap: 0.5rem;
+    width: 90%;
     
+  }
+
+  .img-container-expanded {
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+    height: 45vh; /* Initial height */
+    overflow: hidden;
   }
   
   .artPice-top-expanded {
     width: 90%;
     position: relative;
+    height: 45vh;
+    margin: 1rem;
+  
    
 
   }
-  .artPiece-expanded{
-    width: 100%;
-  }
+ 
 
   .artPiece-expanded {
     position: absolute;
-    top: 2rem;
+    margin-top: 2rem;
+    top: 0%;
     left: 0%;
     bottom: 0%;
     right: 0%;
     width: 100%;
-    height: 100%;
- /*    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    right: 0%;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; */
+    z-index: 2;
+    
   }
-  .artPice-bot-expanded {
-    position: absolute;
-   
-    width: 80%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
-   height: auto;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: #fff;
-    top: 46rem;
-    padding: 0.5rem 1rem;
-   
-  }
+  
+.artPice-bot-expanded {
+  position: relative;
+top: 16%;
+  width: 80%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  flex-direction: column;
+  gap: rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
   .artPice-bot-expanded-top-first {
-    text-align: center;
-    width: 100%;
+    align-self: center;
+ 
   }
   .artPice-bot-expanded-top{
     flex-direction: column;
@@ -374,9 +389,7 @@ p {
   }
 
   .artPice-bot-expanded-bot-buttons{
-    position: relative;
-    margin: 1rem;
-    flex-direction: column;
+    
     
   }
   
@@ -385,19 +398,28 @@ p {
   
   .indexButton {
     position: relative;
+    top: 1rem;
+    left: 0;
+    right: 0;
+
   
   }
   .prevButton{
-    left: -20%;
+    position: relative;
 
   }
   .nextButton{
-    left: 20%;
+    position: relative;
     
   }
 
   .indexButtons{
-    margin: 1rem;
+    margin: 0rem;
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;justify-content: space-between;
+    
   }
   
 }
@@ -407,62 +429,74 @@ p {
     width: 80%;
  
   }
+  .artPiece-background {
+
+  }
   .artPice-bot-expanded-close {
     position: fixed;
     left: 1%;
     top: 1%;
   }
-  .img-container-expanded{
-    width: 100%;
+  .artPice-bot-expanded-bot-buttons {
+    position: relative;
+    align-self: center;
+
+ 
+    gap: 0.5rem;
+    width: 90%;
     
+  }
+
+  .img-container-expanded {
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+    height: 45vh; /* Initial height */
+    overflow: hidden;
   }
   
   .artPice-top-expanded {
     width: 90%;
     position: relative;
+    height: 45vh;
+    margin: 1rem;
+  
    
 
   }
-  .artPiece-expanded{
-    width: 100%;
-  }
+ 
 
   .artPiece-expanded {
     position: absolute;
-    top: 2rem;
+    margin-top: 2rem;
+    top: 0%;
     left: 0%;
     bottom: 0%;
     right: 0%;
     width: 100%;
-    height: 100%;
- /*    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    right: 0%;
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2; */
+    z-index: 2;
+    
   }
-  .artPice-bot-expanded {
-    position: absolute;
-   
-    width: 80%;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
-   height: auto;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: #fff;
-    top: 46rem;
-    padding: 0.5rem 1rem;
-   
-  }
+  
+.artPice-bot-expanded {
+  position: relative;
+top: 16%;
+  width: 80%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: auto;
+  flex-direction: column;
+  gap: rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
   .artPice-bot-expanded-top-first {
-    text-align: center;
-    width: 100%;
+    align-self: center;
+ 
   }
   .artPice-bot-expanded-top{
     flex-direction: column;
@@ -474,9 +508,7 @@ p {
   }
 
   .artPice-bot-expanded-bot-buttons{
-    position: relative;
-    margin: 1rem;
-    flex-direction: column;
+    
     
   }
   
@@ -485,19 +517,28 @@ p {
   
   .indexButton {
     position: relative;
+    top: 1rem;
+    left: 0;
+    right: 0;
+
   
   }
   .prevButton{
-    left: -20%;
+    position: relative;
 
   }
   .nextButton{
-    left: 20%;
+    position: relative;
     
   }
 
   .indexButtons{
-    margin: 1rem;
+    margin: 0rem;
+    position: relative;
+    width: 90%;
+    display: flex;
+    align-items: center;justify-content: space-between;
+    
   }
 }
 

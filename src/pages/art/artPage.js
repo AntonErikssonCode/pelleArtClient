@@ -28,7 +28,7 @@ function ArtPage(props) {
     fetchAllArt();
   }, []);
   return (
-    <div>
+    <div className="artpage">
       <Header cart={props.cart}/>
       <h2 className="pageTitle">Available Art</h2>
       <div className="artWorks">

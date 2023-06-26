@@ -38,6 +38,7 @@ function ArtPiece(props) {
 
   const handleExpand = () => {
     props.handleSetExpandIndex(props.index);
+    window.scrollTo(0, 0);
   };
   const handleClose = () => {
     props.handleSetExpandIndex(null);
@@ -50,6 +51,7 @@ function ArtPiece(props) {
       index = props.artArrayLength - 1;
     }
     props.handleSetExpandIndex(index);
+    window.scrollTo(0, 0);
   };
 
   const handleNextIndex = () => {
@@ -59,6 +61,7 @@ function ArtPiece(props) {
       index = 0;
     }
     props.handleSetExpandIndex(index);
+    window.scrollTo(0, 0);
   };
 
   const handleAddOriginalToCart = () => {

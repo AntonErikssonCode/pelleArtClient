@@ -129,7 +129,7 @@ margin-right: calc(10% + 2rem);
 
 @media (max-width: 767px) {
   .payment-container{
-    width: 95%;
+    width: 85%;
    
   }
   .pageTitle{
@@ -137,7 +137,7 @@ margin-right: calc(10% + 2rem);
     text-align: center;
   }
   .divider{
-    width: 95%;
+    width: 85%;
   }
 }
 

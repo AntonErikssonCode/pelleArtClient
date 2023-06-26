@@ -152,10 +152,12 @@ p {
 
 .prevButton {
   left: 20px;
+  width: 100px;
 }
 
 .nextButton {
   right: 20px;
+  width: 100px;
 }
 
 .indexButton:hover {
@@ -251,7 +253,7 @@ p {
   gap: 0.5rem;
 }
 .lithography-buttons-left {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0.338);
 
   border: 2px solid rgba(90, 236, 45, 1);
   /*   border-right: none;
@@ -305,12 +307,187 @@ p {
     width: 80%;
  
   }
+  .artPice-bot-expanded-close {
+    position: fixed;
+    left: 1%;
+    top: 1%;
+  }
+  .img-container-expanded{
+    width: 100%;
+    
+  }
+  
+  .artPice-top-expanded {
+    width: 90%;
+    position: relative;
+   
+
+  }
+  .artPiece-expanded{
+    width: 100%;
+  }
+
+  .artPiece-expanded {
+    position: relative;
+ /*    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; */
+  }
+  .artPice-bot-expanded {
+    position: relative;
+   
+    width: 80%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  .artPice-bot-expanded-top-first {
+    text-align: center;
+    width: 100%;
+  }
+  .artPice-bot-expanded-top{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .artPice-bot-expanded-top-second{
+    flex-direction: column-reverse;
+  }
+
+  .artPice-bot-expanded-bot-buttons{
+    position: relative;
+    margin: 1rem;
+    flex-direction: column;
+    
+  }
+  
+  
+
+  
+  .indexButton {
+    position: relative;
+  
+  }
+  .prevButton{
+    left: -20%;
+
+  }
+  .nextButton{
+    left: 20%;
+    
+  }
+
+  .indexButtons{
+    margin: 1rem;
+  }
+  
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .artPiece {
     width: 40%;
  
+  }
+  .artPiece {
+    width: 80%;
+ 
+  }
+  .artPice-bot-expanded-close {
+    position: fixed;
+    left: 1%;
+    top: 1%;
+  }
+  .img-container-expanded{
+    width: 100%;
+    
+  }
+  
+  .artPice-top-expanded {
+    width: 90%;
+    position: relative;
+   
+
+  }
+  .artPiece-expanded{
+    width: 100%;
+  }
+
+  .artPiece-expanded {
+    position: relative;
+ /*    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; */
+  }
+  .artPice-bot-expanded {
+    position: relative;
+   
+    width: 80%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+  .artPice-bot-expanded-top-first {
+    text-align: center;
+    width: 100%;
+  }
+  .artPice-bot-expanded-top{
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .artPice-bot-expanded-top-second{
+    flex-direction: column-reverse;
+  }
+
+  .artPice-bot-expanded-bot-buttons{
+    position: relative;
+    margin: 1rem;
+    flex-direction: column;
+    
+  }
+  
+  
+
+  
+  .indexButton {
+    position: relative;
+  
+  }
+  .prevButton{
+    left: -20%;
+
+  }
+  .nextButton{
+    left: 20%;
+    
+  }
+
+  .indexButtons{
+    margin: 1rem;
   }
 }
 

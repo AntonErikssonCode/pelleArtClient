@@ -91,6 +91,7 @@ nav {
   
 
   @media (max-width: 767px) {
+  
     .nav-list {
      
       gap: 0.2rem;

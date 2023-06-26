@@ -132,6 +132,10 @@ margin-right: calc(10% + 2rem);
     width: 95%;
    
   }
+  .pageTitle{
+    margin-top: 6rem;
+    text-align: center;
+  }
   .divider{
     width: 95%;
   }

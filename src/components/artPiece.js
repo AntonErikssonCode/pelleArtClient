@@ -153,14 +153,14 @@ function ArtPiece(props) {
         )}
       </div>
       {expanded ? (
-        <>
+        <div className="indexButtons">
           <button className="indexButton prevButton" onClick={handlePrevIndex}>
             Previously
           </button>
           <button className="indexButton nextButton" onClick={handleNextIndex}>
             Next
           </button>
-        </>
+        </div>
       ) : null}
       {expanded ? (
         <div className="artPice-bot-expanded-bot-buttons">
@@ -258,7 +258,7 @@ function ArtPiece(props) {
               <p>{props.data.price + "kr (Original)"}</p>
             ) : null}
           </div>
-          <div className="artPice-bot-expanded-top">
+          <div className="artPice-bot-expanded-top artPice-bot-expanded-top-second">
             {props.data.sold && props.data.amountLeft <= 0 ? (
               <h4 className="artPice-sold artPice-bot-expanded-top-first">
                 Sold

@@ -61,11 +61,24 @@
 
 
 @media (max-width: 767px) {
+  .checkOutItem-img-space{
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .checkOutItem-title{
+    flex-grow: 1;
+    width: 100%;
+    margin-bottom: 0.7rem;
+  
+  }
   .checkOutItem {
 
     width: 95%;
-    gap: 0.5rem;
+    gap: 0.7rem;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
   .checkOutItem-titleAndType{
     flex-grow: 1;

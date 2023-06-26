@@ -128,13 +128,23 @@ margin-right: calc(10% + 2rem);
 
 
 @media (max-width: 767px) {
-  /* Styles specific to phones */
-  /* Write your phone-specific styles here */
+  .payment-container{
+    width: 95%;
+   
+  }
+  .divider{
+    width: 95%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* Styles specific to tablets */
-  /* Write your tablet-specific styles here */
+  .payment-container{
+    width: 70%;
+   
+  }
+  .divider{
+    width: 70%;
+  }
 }
 
 @media (min-width: 1024px) {

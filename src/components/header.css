@@ -89,12 +89,17 @@ nav {
 /*   font-family: Arial, Helvetica, sans-serif;
  */ }
   
+ .cart-num p {
+
+  min-height: 20px;
+  min-width: 20px;
+  }
 
   @media (max-width: 767px) {
   
     .nav-list {
      
-      gap: 0.2rem;
+      gap: 1rem;
      
     }
     .nav-link {

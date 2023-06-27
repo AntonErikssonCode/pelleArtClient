@@ -39,7 +39,7 @@ function Header(props) {
               }`}
               to="/checkout"
             >
-              CHECK OUT
+             CART
             </Link>
             <div className="cart-num">
               <p className="">{totalCartLength}</p>

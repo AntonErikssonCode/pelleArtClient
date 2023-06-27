@@ -49,7 +49,7 @@ function CheckOutPage(props) {
     return (
       <div>
         <Header cart={props.cart} />
-        <h2 className="pageTitle">Check Out</h2>
+        <h2 className="pageTitle">Shopping Cart</h2>
 
         <div className="checkOut">
           <div className="divider"></div>

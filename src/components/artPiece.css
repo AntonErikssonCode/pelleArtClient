@@ -113,11 +113,11 @@ p {
 
 .artPice-bot-expanded {
   position: fixed;
-  top: 84%;
+  top: 80%;
   width: 50%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 12%;
+  height: auto;
   flex-direction: column;
   gap: 0.5rem;
   color: #fff;

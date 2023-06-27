@@ -277,7 +277,9 @@ function ArtPiece(props) {
           <div className="artPice-bot-expanded-bot">
             <p>{props.data.desc}</p>
           </div>
+         
         </div>
+        
       ) : (
         <div className="artPice-bot">
           <h3>{props.data.title}</h3>

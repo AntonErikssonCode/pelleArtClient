@@ -158,7 +158,7 @@ function ArtPiece(props) {
       {expanded ? (
         <div className="indexButtons">
           <button className="indexButton prevButton" onClick={handlePrevIndex}>
-            Previously
+          Previous
           </button>
           <button className="indexButton nextButton" onClick={handleNextIndex}>
             Next

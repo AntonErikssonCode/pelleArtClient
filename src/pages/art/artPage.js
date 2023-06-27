@@ -57,7 +57,7 @@ function ArtPage(props) {
           );
         }): null}
       </div>
-      <ResetButton/>
+    {/*   <ResetButton/> */}
     </div>
   );
 }

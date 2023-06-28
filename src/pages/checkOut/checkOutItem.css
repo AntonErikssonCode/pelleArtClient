@@ -86,9 +86,15 @@
   
   }
   .checkOutItem-price {
-    flex-shrink: 0;
-    width: 70%;
+    flex-grow: 1;
+    width: 40%;
   
+  }
+  .checkOutItem-remove{
+    min-width: 40%;
+    text-align: end;
+    padding: 0;
+   
   }
 }
 
